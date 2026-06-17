@@ -11,7 +11,7 @@ plain files that can be reviewed, edited, committed, and reused.
 This vault is intended to live in a private GitHub repository:
 
 ```bash
-cd /Users/mil/Documents/codex-memory-vault
+cd /Users/mil/Documents/Codex/memory-vault
 git remote -v
 git push -u origin main
 ```
