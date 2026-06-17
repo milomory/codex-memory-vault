@@ -1,0 +1,45 @@
+# Codex Memory Vault
+
+This repository stores durable working memory for Codex sessions. Treat it as a
+reviewable notebook, not as an invisible memory dump.
+
+## Rules
+
+- Never store secrets, API keys, passwords, private tokens, recovery codes, full
+  personal documents, payment details, or private contact details.
+- Prefer short, factual notes over broad impressions.
+- Every memory update should be useful in a future task and easy to review in a
+  git diff.
+- If a note is uncertain, mark it as `Unconfirmed`.
+- When closing tasks or making decisions, update the relevant project or
+  decision file.
+- Do not overwrite user-written notes without preserving their intent.
+
+## What To Update
+
+- `TODO.md`: active open loops, follow-ups, and waiting-for items.
+- `projects/`: durable state for projects, products, repositories, and systems.
+- `people/`: working preferences and collaboration context, only when useful.
+- `decisions/`: decisions with date, context, options, and rationale.
+- `notes/`: daily or ad hoc notes that do not yet belong elsewhere.
+- `agent/preferences.md`: stable preferences for working with Codex.
+- `agent/workflows.md`: repeatable workflows that should be reused.
+
+## Memory Update Format
+
+When updating memory, keep entries compact:
+
+- Date: `YYYY-MM-DD`
+- Source: where the information came from
+- Confidence: `confirmed`, `inferred`, or `unconfirmed`
+- Action: what should happen next, if any
+
+## Review Habit
+
+Memory changes should be reviewed like code:
+
+```bash
+git diff -- codex-memory-vault
+```
+
+Commit memory updates separately from unrelated code changes when possible.
