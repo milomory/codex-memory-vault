@@ -94,10 +94,12 @@ Hyperion `memory-core` ingested the vault as:
 
 - `project_id`: `project:codex-memory-vault`
 - container path: `/memory-vault`
-- indexed files: 23
+- indexed files after first stable-path ingest: 23
 - indexed chunks after first stable-path ingest: 30
-- stats after ingest: 174 nodes, 223 edges, 123 chunks, 193 embeddings,
-  1549 events, 5 project tokens.
+- indexed files after follow-up reingest: 24
+- indexed chunks after follow-up reingest: 31
+- observed stats after follow-up reingest: 175 nodes, 224 edges, 124 chunks,
+  194 embeddings, 1631 events, 5 project tokens.
 
 Search check:
 
