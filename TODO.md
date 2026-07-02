@@ -2,8 +2,6 @@
 
 ## Active
 
-- [ ] Push the reviewed `memory-vault` baseline to the Athena GitLab remote
-  after the current dirty docs are committed.
 - [ ] Review and optionally install third-party skills from
   `reachmeshailesh-boop/codex-skill-pack`.
 - [ ] Migrate the `memory-core` graph-vector service design from the decommissioning VDS to a laptop-first operation path:
@@ -39,6 +37,9 @@
 - [x] Created private Athena GitLab mirror project `codex/memory-vault` and
   added local remote `athena` via `ssh://athena-gitlab/codex/memory-vault.git`
   (`2026-07-02`).
+- [x] Pushed the reviewed `memory-vault` baseline to both Athena GitLab and
+  GitHub, then ingested the vault into Hyperion `memory-core`
+  (`project:codex-memory-vault`, 2026-07-02).
 - [x] Transferred VDS `memory-core` design details and shared-memory rollout artifacts into this vault for continuity (`2026-07-01`).
 - [x] Cut over live `memory-core` API to Hyperion Docker runtime on
   `127.0.0.1:8765`; moved OpenClaw gateway to loopback-only host publishing on

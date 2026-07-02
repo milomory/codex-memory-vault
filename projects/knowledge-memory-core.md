@@ -78,3 +78,28 @@
   inside Docker but host-loopback-only externally.
 - Detailed cutover note:
   - `notes/hyperion-memory-core-cutover-2026-07-01.md`
+
+## Current shared-vault index status
+
+- Date: 2026-07-02
+- Source: live Hyperion `memory-core` ingest.
+- Confidence: confirmed.
+
+`memory-vault` was pushed to:
+
+- Athena GitLab: `ssh://athena-gitlab/codex/memory-vault.git`
+- GitHub: `git@github.com:milomory/codex-memory-vault.git`
+
+Hyperion `memory-core` ingested the vault as:
+
+- `project_id`: `project:codex-memory-vault`
+- container path: `/memory-vault`
+- indexed files: 23
+- indexed chunks after first stable-path ingest: 30
+- stats after ingest: 174 nodes, 223 edges, 123 chunks, 193 embeddings,
+  1549 events, 5 project tokens.
+
+Search check:
+
+- query: `Athena GitLab memory vault deploy key`
+- expected hit: `notes/athena-memory-vault-gitlab-2026-07-02.md`
