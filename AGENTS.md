@@ -43,3 +43,21 @@ git diff -- codex-memory-vault
 ```
 
 Commit memory updates separately from unrelated code changes when possible.
+
+## Shared memory-core
+
+- Protect private memory and secrets: do not print, store, or expose secrets,
+  tokens, credentials, private config, or private memory contents.
+- When shared memory-core is available, check/search it for
+  `project:codex-memory-vault` before work that may depend on shared project
+  context.
+- In case the service is unavailable or VDS-hosted memory services are retired,
+  continue from local docs and explicitly add a short recovery note to this vault.
+- After meaningful changes, write short shared memory summaries when
+  appropriate.
+- If memory-core is unavailable, say so explicitly and continue with local
+  repository context. The same applies when bridge restrictions prevent direct
+  access from launch contexts.
+- Local or normal Mac Codex sessions can use `http://127.0.0.1:8765` directly.
+  Bridge-driven Codex may instead receive memory context injected by OpenClaw,
+  because the bridge sandbox has no direct network access.
